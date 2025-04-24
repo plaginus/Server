@@ -7,8 +7,8 @@ public class Main {
 
 	      int port = 6066;
 	      try {
-	         Thread t = new Server(port);
-	         t.start();
+			Server server = new Server(port);
+	         server.run();
 	      } catch (IOException e) {
 	         e.printStackTrace();
 	      }
